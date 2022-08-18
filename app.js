@@ -206,4 +206,5 @@ function clearAll(){
   fetch(url+page)
   .then(response => response.json())
   .then(data => makeCards(data.results));
+  document.getElementById('search').value = ""
 }
